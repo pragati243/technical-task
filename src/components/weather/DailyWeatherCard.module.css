@@ -1,0 +1,118 @@
+.weather__daily--container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-wrap: nowrap;
+}
+
+.weather__daily-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0rem;
+}
+
+.weather__daily--status {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.weather__daily--img {
+  position: relative;
+  width: 50%;
+  height: 150px;
+}
+
+.weather__daily--status-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.weather__daily--temp {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  text-align: end;
+}
+.weather__daily--desc {
+  font-style: italic;
+  text-align: center;
+}
+
+.weather__daily--unit {
+  font-size: 1.5rem;
+}
+
+.weather__daily--misc-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  grid-template-rows: repeat(3, minmax(50px, 1fr));
+  font-size: 1.15rem;
+}
+
+.weather__daily--misc-icon {
+  flex-basis: 50px;
+}
+
+.weather__daily--misc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid white;
+}
+
+.weather__daily--misc-item:last-child,
+.weather__daily--misc-item:nth-last-child(2) {
+  border-bottom: none;
+}
+
+.weather__daily--misc-title {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 0.25rem;
+  justify-content: flex-start;
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .weather__daily--misc-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .weather__daily--misc-icon {
+    flex-basis: 32px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .weather__daily--misc-container {
+    font-size: 1rem;
+  }
+
+  .weather__daily--temp {
+    font-size: 3rem;
+  }
+}
+/* md */
+@media (max-width: 768px) {
+  .weather__daily--misc-item {
+    padding: 0.75rem;
+  }
+}
+/* sm */
+@media (max-width: 640px) {
+  .weather__daily--misc-item {
+    padding: 0.25rem;
+  }
+
+  .weather__daily--img {
+    height: 100px;
+  }
+}

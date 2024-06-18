@@ -1,0 +1,141 @@
+.weather__container {
+  position: absolute;
+  top: 15%;
+  left: 52.5%;
+  z-index: 1000;
+  color: #fff;
+  max-width: 90dvw;
+  min-height: 30dvh;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  touch-action: none;
+  user-select: none;
+  border-width: 2px;
+}
+
+.weather__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.weather__type-container {
+  border: 2px solid #fff;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.weather__type-container--counter {
+  border-radius: 9999px;
+  display: none;
+}
+
+.weather__header-item {
+  align-self: center;
+  flex: 1 1;
+  border-right: 2px solid #fff;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease-in,
+    color 0.3s ease-in;
+}
+
+.weather__header-item--counter {
+  align-self: center;
+  flex: 1 1;
+  padding: 0.25rem;
+  cursor: pointer;
+  height: 100%;
+  transition: background-color 0.2s ease-in;
+}
+
+.weather__header-item--counter:nth-child(odd):hover {
+  background-color: hsla(224, 15%, 19%, 0.249);
+}
+
+.weather__header-item--counter:first-child {
+  border-radius: 9999px 0px 0px 9999px;
+}
+
+.weather__header-item--counter:last-child {
+  border-radius: 0px 9999px 9999px 0px;
+}
+
+.weather__header-item:last-child {
+  border: none;
+}
+
+.weather__header-item-active {
+  color: #292d39;
+  background-color: #fff;
+}
+
+.weather__header-item-active:first-child {
+  border-radius: 6px 0px 0px 6px;
+}
+
+.weather__header-item-active:last-child {
+  border-radius: 0px 6px 6px 0px;
+}
+
+.weather__container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: var(--colors-primary);
+  z-index: -1;
+}
+
+.weather__city_name {
+  font-size: 1.5rem;
+}
+
+.weather__data {
+  flex: 1;
+  display: flex;
+  margin-top: 1rem;
+}
+/* xl */
+@media (max-width: 1280px) {
+  .weather__data {
+    margin-top: 0rem;
+  }
+  .weather__container {
+    top: 5%;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .weather__type-container {
+    display: none;
+  }
+  .weather__type-container--counter {
+    display: flex;
+  }
+  .weather__container {
+    top: 10%;
+    left: 25%;
+  }
+}
+/* sm */
+@media (max-width: 640px) {
+  .weather__container {
+    left: 20%;
+  }
+}
+/* xs */
+@media (max-width: 475px) {
+  .weather__container {
+    left: 5%;
+  }
+}

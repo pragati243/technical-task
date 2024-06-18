@@ -1,0 +1,55 @@
+{
+  "name": "weather-wonder",
+  "version": "1.0.0",
+  "authors": [
+    "Berke Bakar"
+  ],
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "lint": "next lint --fix --dir app",
+    "dev": "next dev",
+    "build": "next build",
+    "analyze": "ANALYZE=true next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@ducanh2912/next-pwa": "^10.0.0",
+    "@react-spring/web": "^9.7.3",
+    "@react-three/drei": "^9.92.7",
+    "@react-three/fiber": "^8.15.12",
+    "@use-gesture/react": "^10.3.1",
+    "@vercel/analytics": "^1.3.1",
+    "axios": "^1.6.8",
+    "maath": "^0.10.7",
+    "next": "^14.0.4",
+    "r3f-perf": "^7.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.2.0",
+    "react-responsive": "^10.0.0",
+    "three": "^0.160.0",
+    "three-stdlib": "^2.28.9",
+    "tunnel-rat": "^0.1.2",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^14.0.4",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "file-loader": "^6.2.0",
+    "glslify": "^7.1.1",
+    "glslify-loader": "^2.0.0",
+    "postcss": "^8.4.32",
+    "prettier": "^3.1.1",
+    "raw-loader": "^4.0.2",
+    "tailwindcss": "^3.4.0",
+    "url-loader": "^4.1.1"
+  }
+}
