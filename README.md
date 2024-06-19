@@ -1,8 +1,6 @@
-# Weather Wonder - Interactive 3D Weather Map
 
-![Accessibility Score](./image/README/scores/lighthouse_accessibility.svg) ![Best Practices Score](./image/README/scores/lighthouse_best-practices.svg) ![Performance Score](./image/README/scores/lighthouse_performance.svg) ![SEO Score](./image/README/scores/lighthouse_seo.svg)
 
-Weather Wonder is an open-source 3D progressive web application ([PWA](https://web.dev/explore/progressive-web-apps)) designed for checking current, hourly, and daily weather forecasts for any location on the globe. Users can also save their favorite places for quick access.
+This is a 3D progressive web application  designed for checking current, hourly, and daily weather forecasts for any location on the globe. Users can also save their favorite places for quick access.
 
 Visit (https://weatherwonder.vercel.app/)
 
@@ -50,7 +48,7 @@ Visit (https://weatherwonder.vercel.app/)
 
 ## How It Works
 
-Weather Wonder uses data from multiple sources to provide comprehensive weather information:
+This uses data from multiple sources to provide comprehensive weather information:
 
 - **Location Data**: Provided by [OpenStreetMap](https://openstreetmap.org/copyright), this data helps in identifying and locating places on the globe.
 - **Weather Data**: Provided by [Open-Meteo.com](https://open-meteo.com), this data includes current weather, hourly forecasts, and daily forecasts for the selected locations.
@@ -110,6 +108,3 @@ The data is fetched using the Open-Meteo API, which provides real-time and forec
 ### 3D Visualization
 The 3D globe visualization is rendered using a GLB file. GLB (GL Transmission Format Binary) is a binary version of the GLTF (GL Transmission Format) file format. It is optimized for loading speed and used for rendering the interactive 3D globe in the application.
 
-## Credits
-- Location data provided by [OpenStreetMap](https://openstreetmap.org/copyright)
-- Weather data by [Open-Meteo.com](https://open-meteo.com)
