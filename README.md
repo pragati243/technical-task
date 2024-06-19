@@ -4,7 +4,7 @@
 
 Weather Wonder is an open-source 3D progressive web application ([PWA](https://web.dev/explore/progressive-web-apps)) designed for checking current, hourly, and daily weather forecasts for any location on the globe. Users can also save their favorite places for quick access.
 
-Visit [Weather Wonder](https://weatherwonder.vercel.app/) to explore the app!
+Visit (https://weatherwonder.vercel.app/)
 
 ## Features
 
